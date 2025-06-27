@@ -49,6 +49,8 @@ To build a predictive model that can estimate multiple water quality parameters 
   - `O2`, `NO3`, `NO2`, `SO4`, `PO4`, `CL`
 
 ---
+## Model Link
+-https://drive.google.com/file/d/1hJkU9Xirz2whcBHMCCyLHL8W2jZXYJRA/view?usp=drive_link
 
 ## 📈 Evaluation Metrics
 
