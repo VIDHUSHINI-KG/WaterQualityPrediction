@@ -1,4 +1,4 @@
-# Week 1 Project - Water Quality Prediction
+# AICTE Project - Water Quality Prediction
  
 This project focuses on predicting key water quality parameters using historical data from 2000 to 2021. It employs a MultiOutput Regression model with Random Forests to estimate six major pollutants: **O2, NO3, NO2, SO4, PO4, and CL** based on temporal features such as year, month, and station ID.
 
