@@ -50,18 +50,5 @@ y_pred = best_model.predict(X_test)
 
 print("\nEvaluation Metrics:")
 print("R2 Score:", r2_score(y_test, y_pred, multioutput='uniform_average'))
-print("MAE:", mean_absolute_error(y_test, y_pred))
 print("RMSE:", np.sqrt(mean_squared_error(y_test, y_pred)))
 
-# Step 9: Visualization of actual vs predicted for each pollutant
-for i, col in enumerate(y.columns):
-    plt.figure(figsize=(6, 3))
-    plt.plot(y_test.iloc[:, i].values[:50], label='Actual')
-    plt.plot(y_pred[:, i][:50], label='Predicted')
-    plt.title(f"{col} - Actual vs Predicted")
-    plt.legend()
-    plt.tight_layout()
-    plt.show()
-
-# Step 10: Save the model for later use
-joblib.dump(best_model, "water_quality_model.pkl")
